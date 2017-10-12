@@ -87,7 +87,7 @@ Kombiniere Aufgabe 7 und 8 so, dass nur Personen (`ACCOUNT`) angezeigt werden, d
 ```sql
 SELECT *
 FROM ACCOUNT
-WHERE ACCOUNT
+WHERE 
 ```
 
 ### Aufgabe 10
@@ -95,7 +95,9 @@ Modifizierde die Aufgabe 9 so, dass nur die Person mit der `ACCOUNT_ID` = `7` an
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT *
+FROM ACCOUNT
+WHERE ACCOUNT_ID=7;
 ```
 
 ### Aufgabe 11
@@ -104,7 +106,8 @@ Erstelle für dich einen neuen Benutzer.
 
 #### Lösung
 ```sql
-Deine Lösung
+INSERT INTO ACCOUNT
+values (12, 'Aaron', 'Jahn', 'muster@fh-trier.de', SYSDATE, SYSDATE);
 ```
 
 ### Aufgabe 12
@@ -112,7 +115,8 @@ Erstelle für deinen neuen Benutzer ein neues Auto. Dieses Auto dient als Vorlag
 
 #### Lösung
 ```sql
-Deine Lösung
+INSERT INTO VEHICLE
+values (199, 12, 78, '308', 2, 140, TO_DATE('01.10.2015', 'dd.mm.yyyy'), 4, SYSDATE, SYSDATE);
 ```
 
 ### Aufgabe 13
@@ -128,7 +132,9 @@ Deine Lösung
 
 #### Lösung
 ```sql
-Deine Lösung
+UPDATE ACCOUNT
+SET SURNAME = 'Zimmermann'
+WHERE ACCOUNT_ID=7;
 ```
 
 ### Aufgabe 15
@@ -136,5 +142,5 @@ Speichere alle Änderungen deiner offenen Transaktion. Wie lautet der SQL-Befehl
 
 #### Lösung
 ```sql
-Deine Lösung
+commit;
 ```
