@@ -87,7 +87,7 @@ Kombiniere Aufgabe 7 und 8 so, dass nur Personen (`ACCOUNT`) angezeigt werden, d
 ```sql
 SELECT *
 FROM ACCOUNT
-WHERE 
+WHERE ACCOUNT
 ```
 
 ### Aufgabe 10
