@@ -17,7 +17,7 @@ Schaue dir das Datenbankmodell an. Wofür steht hinter dem Datentyp `NUMBER` die
 Nehme dir die Oracle [Dokumentation](https://docs.oracle.com/cd/B28359_01/server.111/b28318/datatype.htm#CNCPT012) zu Hilfe.
 
 #### Lösung
-Deine schritliche Antwort.
+Anzahl der benutzbaren Zahlen, max (38).
 
 ### Aufgabe 2
 Was bedeuten die durchgezogenen Linien, die zwischen einigen Tabellen abgebildet sind?
@@ -43,7 +43,7 @@ Deine schriftliche Antwort.
 Was bedeutet der Buchstabe `P` und `F` neben den Attributen von Tabellen?
 
 #### Lösung
-Deine schriftliche Lösung.
+Primärschlussel & Fremdschlüssel
 
 ### Aufgabe 5
 Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl um dem import zu starten?
@@ -58,7 +58,8 @@ Gebe alle Datensätze der Tabelle `ACCOUNT` aus.
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT * 
+FROM ACCOUNT;
 ```
 
 ### Aufgabe 7
@@ -66,7 +67,8 @@ Modifiziere Aufgabe 6 so, dass nur die Spalte `ACCOUNT_ID` ausgegeben wird.
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT ACCOUNT_ID
+FROM ACCOUNT;
 ```
 
 ### Aufgabe 8
@@ -74,7 +76,8 @@ Gebe alle Spalten der Tabelle `VEHICLE` aus.
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT * 
+FROM VEHICLE;
 ```
 
 ### Aufgabe 9
@@ -82,7 +85,9 @@ Kombiniere Aufgabe 7 und 8 so, dass nur Personen (`ACCOUNT`) angezeigt werden, d
 
 #### Lösung
 ```sql
-Deine Lösung
+SELECT *
+FROM ACCOUNT
+WHERE 
 ```
 
 ### Aufgabe 10
