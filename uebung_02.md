@@ -17,7 +17,7 @@ Schaue dir das Datenbankmodell an. Wofür steht hinter dem Datentyp `NUMBER` die
 Nehme dir die Oracle [Dokumentation](https://docs.oracle.com/cd/B28359_01/server.111/b28318/datatype.htm#CNCPT012) zu Hilfe.
 
 #### Lösung
-Anzahl der benutzbaren Zahlen, max (38).
+Sind hinter 'NUMBER' Zahlen in Klammern angegeben, steht die erste Zahl für die Gesamtzahl der Stellen und die zweite Zahl für die Anzahl der Nachkommastellen
 
 ### Aufgabe 2
 Was bedeuten die durchgezogenen Linien, die zwischen einigen Tabellen abgebildet sind?
@@ -50,7 +50,7 @@ Importiere die SQL-Dump-Datei in dein eigenes Schema. Wie lautet dazu der Befehl
 
 #### Lösung
 ```sql
-Deine Lösung
+START tutorium.sql
 ```
 
 ### Aufgabe 6
@@ -86,8 +86,8 @@ Kombiniere Aufgabe 7 und 8 so, dass nur Personen (`ACCOUNT`) angezeigt werden, d
 #### Lösung
 ```sql
 SELECT *
-FROM ACCOUNT
-WHERE 
+FROM ACC_VEHIC
+WHERE ACCOUNT_ID 
 ```
 
 ### Aufgabe 10
